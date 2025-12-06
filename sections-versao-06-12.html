@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura Cos</title>
+
+    <!--Fonte Abhaya Libre-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!--Incluindo css bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--Fonte de ícones do Google-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet" />
+
+    <link rel="stylesheet" href="estilos_menu_ellen_06-12.css">
+    <link rel="stylesheet" href="estilos_ellen_06-12.css">
+</head>
+
+<body>
+    <header>
+        <!--Oferta acima do menu-->
+        <div id="oferta-header">
+            <div class="container-md text-center">
+                <p class="m-0 py-0"> <!--margem 0 e padding 8px-->
+                    Obtenha 20% de desconto na semana do consumidor com produtos selecionados. Aproveite! 
+                </p>
+            </div>
+        </div>
+        
+        <!--Adaptação bootstrap para a navbar do menu, com responsividade-->
+        <div class="container-fluid menu d-flex justify-content-center align-items-center">
+            <nav class="navbar navbar-expand-lg navbar-dark d-flex justify-content-center py-3">  
+                <!--logo-->
+                <img src="Imagens/logo cortada.png" alt="logotipo da loja" class="navbar-brand logotipo"><!--Imagem logo--></img>
+
+                <!--Botao sanduiche em telas menores-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!--Lista de navegaveis-->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <!--Aria current: recurso de acessibilidade que diz qual pagina é a atual-->
+                            <a href="index.html" class="nav-link" aria-current="page">Início</a>
+                        </li>
+                            
+                        <!--Categorias com botão funcional, adaptado com bootstrap-->
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categorias
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="categorias.html">Masculino</a></li>
+                                <li><a class="dropdown-item" href="categorias.html">Feminino</a></li>
+                                <li><a class="dropdown-item" href="categorias.html">Infantil</a></li>
+                            </ul>
+                            </li>
+                        <li class="nav-item"><a href="catalogo.html" class="nav-link">Catálogo</a></li>
+                        <li class="nav-item"><a href="sobre-nos.html" class="nav-link">Sobre nós</a></li>
+
+                        <li><!--Caixa de pesquisa-->
+                            <div class="caixa-busca textos-simbolos">
+                                <button> <!--Botao de pesquisa-->
+                                    <span class="material-symbols-outlined"> 
+                                        search<!--Ícone de pesquisa-->
+                                    </span>
+                                </button>
+                                <!--Input dá o tipo de entrada-->
+                                <!--Placeholder é o texto que some ao digitar-->
+                                <input type="text" id="texto-busca" placeholder="Pesquise por produtos"></input>
+                            </div>
+                        </li>
+                    
+                        <!--Icone de carrinho-->
+                        <li class="nav-item"><a href="carrinho.html" class="nav-link"><span class="material-symbols-outlined">shopping_cart</span></a></li>
+                        <!--Icone de login-->
+                        <li class="nav-item"><a href="#" class="nav-link"><span class="material-symbols-outlined">account_circle</span></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="dstq-principal">
+        <article>
+            <!--Usando bootstrap pra fazer o destaque-->
+            <div class="container-md">
+                <!--Primeira linha onde ficara o texto e a imagem do outro lado-->
+                <div class="row mt-2 d-flex flex-row justify-content-start align-items-center"><!--mt é a margem superior-->
+                    <div class="col-md-6">
+                        <h1 class="dstq-titulo">
+                            VIVA SUA MAGIA,<br>
+                            VIVA O COSPLAY.
+                        </h1>
+                    
+                        <p class="dstq-frase my-4"><!--my é margem em cima e embaixo-->
+                            Descubra fantasias, acessórios e roupas que trazem seus<br> 
+                            personagens favoritos para a vida real.
+                        </p>
+                        
+                        <div class="row mt2 d-flex justify-content-center">
+                            <!--mx é a margem direita e esq-->
+                            <div class="col-md-2 mx-5 p-0 d-flex flex-column">
+                                <h4 class="dstq-quantias">+200</h4>
+                                <p class="dstq-texto">Personagens disponíveis</p>
+                            </div>
+                            <div class="vr"></div><!--linha vertical-->
+                            <div class="col-md-2 mx-5 p-0 d-flex flex-column">
+                                <h4 class="dstq-quantias">+2.000</h4>
+                                <p class="dstq-texto">Itens exclusivos</p>
+                            </div>
+                            <div class="vr"></div><!--linha vertical-->
+                            <div class="col-md-2 mx-5 p-0 d-flex flex-column">
+                                <h4 class="dstq-quantias">+30.000</h4>
+                                <p class="dstq-texto">Cosplayers felizes</p>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-md-4 my-3">
+                                <!--Padding em cima e embaixo - py
+                                Padding lado dir e esq - px-->
+                                <button type="button" class="botao-verde dstq-texto py-2 px-4 btn btn-primary btn-lg rounded-5">
+                                    Compre agora
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-start">
+                        <!--Img fluid deixa a imagem responsiva-->
+                        <img src="Imagens/modelo.png" alt="modelo cosplay" id="dstq-img" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section>
+        <!--Faixa de promoção abaixo do destaque-->
+        <article>
+                <div class="text-center dstq-verde">
+                    <p>
+                        Aproveite nossa promoção de halloween 2025!
+                    </p>
+                </div>
+        </article>
+    </section>
+    <!--Section para lançamentos-->
+    <section>
+        <article class="container-md d-flex flex-column justify-content-center">
+            <h2 class="titulo-section text-center">
+                LANÇAMENTOS
+            </h2>
+            <div class="row mt-2 d-flex flex-row justify-content-center">
+                <div class="col-md-3 p-2 d-flex justify-content-center">
+                    <!--Adaptação bootstrap - 1º card-->
+                    <div class="card estilo-card">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>
+                                Placeholder
+                            </title>
+                            <rect width="100%" height="100%" fill="#868e96">
+                            </rect>
+                            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
+                                Image cap
+                            </text>
+                        </svg>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">
+                                Go somewhere
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-2 d-flex justify-content-center">
+                    <!--Adaptação bootstrap - 2º card-->
+                    <div class="card estilo-card">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>
+                                Placeholder
+                            </title>
+                            <rect width="100%" height="100%" fill="#868e96">
+                            </rect>
+                            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
+                                Image cap
+                            </text>
+                        </svg>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">
+                                Go somewhere
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-2 d-flex justify-content-center">
+                    <!--Adaptação bootstrap - 3º card-->
+                    <div class="card estilo-card">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>
+                                Placeholder
+                            </title>
+                            <rect width="100%" height="100%" fill="#868e96">
+                            </rect>
+                            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
+                                Image cap
+                            </text>
+                        </svg>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">
+                                Go somewhere
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-2 d-flex justify-content-center">
+                    <!--Adaptação bootstrap - 4º card-->
+                    <div class="card estilo-card">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>
+                                Placeholder
+                            </title>
+                            <rect width="100%" height="100%" fill="#868e96">
+                            </rect>
+                            <text x="50%" y="50%" fill="#dee2e6" dy=".3em">
+                                Image cap
+                            </text>
+                        </svg>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">
+                                Go somewhere
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-1 d-flex justify-content-end">
+                <!--setas lado esq e dir-->
+                <span class="material-symbols-outlined">
+                arrow_back arrow_forward
+                </span>
+            </div>
+            <div class="row m-2 d-flex flex-row justify-content-center">
+                <div class="col-md-4">
+                    <button type="button" class="botao-verde dstq-texto py-2 px-4 btn btn-primary btn-lg rounded-5">
+                        Ver tudo
+                    </button>
+                </div>
+            </div>
+        </article>
+    </section>
+<!--Incluindo javascript bootstrap-->
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

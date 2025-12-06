@@ -1,0 +1,112 @@
+/*ESTILOS REFERENTES AS PAGINAS CARRINHO E LAND PAGE*/
+
+/*Fonte da página */
+body {
+    font-family: "Abhaya Libre", serif;
+}
+
+/*prompt 1 ChatGPT - juntei o header com essa section e quando inspeciono e
+coloco no formato de um celular, ele fica ums borda branca que nao
+ficava antes, eu preciso q fique responsivo com o conteudo centralizado
+e sem essa coisa branca ai
+TRECHO POR IA:*/
+.dstq-principal {
+    background-color: #FFC4D1;
+    color: #ffffff;
+    padding: 16px 20px 0px; /*valor pequeno para celular*/
+    width: 100%; 
+}
+
+/* Para telas médias pra cima (>= 768px) */
+@media (min-width: 768px) {
+    .dstq-principal {
+        padding: 16px 80px 0px; /* tablet */
+    }
+} 
+
+/* Para telas grandes (>= 992px) */
+@media (min-width: 992px) {
+    .dstq-principal {
+        padding: 16px 100px 0px; /* desktop */
+    }
+}
+/*FIM TRECHO POR IA*/
+
+/*Para o conteúdo ocupar toda largura da tela*/
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
+
+/*LAND PAGE*/
+/*DESTAQUE PRINCIPAL - ESTILOS*/
+
+/*Fundo rosa*/
+.hero-principal {
+    background-color: #f7b9c8;
+    color: white;
+}
+
+/*Título*/
+.dstq-titulo {
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+/*Frase de destaque*/
+.dstq-frase {
+    font-size: 24px;
+}
+
+/*Textos pequenos*/
+.dstq-texto {
+    font-size: 20px;
+    text-align: center;
+}
+
+/*Quantias*/
+.dstq-quantias {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*Linhas verticais*/
+.dstq-principal .vr {
+    width: 2px;
+    padding: 0;
+}
+
+/*Destaque verde */
+.dstq-verde {
+    background-color: #A0E166;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    width: 100%;
+}
+
+/* Botão */
+.botao-verde {
+    background-color: #A0E166;
+    border: none;
+    font-weight: bold;
+}
+
+.botao-verde:hover {
+    background-color: #8ec95b;
+}
+
+/*Imagem destaque*/
+#dstq-img {
+    max-height: 700px;   /*Maximo de altura da imagem*/
+    width: auto;
+    object-fit: contain;
+}
+
+/*SECTION LANÇAMENTOS - ESTILOS*/
+.estilo-card {
+    width: 100%;
+}

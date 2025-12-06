@@ -1,0 +1,109 @@
+/*formatação dos linkáveis no header*/
+header .nav-link {
+    color: #FFFF; 
+}
+
+/*formatação dos linkáveis no header, quando passa o mouse*/
+header .nav-link:hover {
+    color: rgba(255, 255, 255, 0.732); 
+}
+
+/*ESTILIZAÇÃO DE ELEMENTOS PRINCIPAIS - HEADER*/
+/*header com oferta e menu */
+header {
+    font-size: 24px; /*tamanho da fonte */
+    color: #FFFF;
+    text-decoration: none; /*remove sublinhado dos linkáveis*/
+    background-color: #FFC4D1;
+}
+
+/*Força o input a herdar a mesma
+tipografia do header
+pois input vem com formatacao padrao do navegador*/
+header input {
+  font-family: inherit;
+}
+
+/*id para o fundo verde ocupar toda largura e configs basicas*/
+#oferta-header {
+    background-color: #A0E166;
+    font-size: 20px;
+    width: 100%; 
+}
+
+/*proporções do logotipo*/
+.logotipo {
+    height: 70px; /*altura logo*/
+    width: auto;
+    padding: 8px 16px;
+}
+
+/*ESTILIZAÇÃO DE SIMBOLOS & TEXTOS DO HEADER*/
+/*tamanho símbolos do google no header*/
+header .material-symbols-outlined {
+    font-size: 21px;
+}
+
+/*alinhamento de texto + símbolos do google no geral no header*/
+header .textos-simbolos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+} 
+
+/*estilização de botoes dentro do header */
+header button {
+    padding: 0px 0px 0px 0px;
+    color: #FFFF;
+    background-color: transparent;
+    border: none;
+}
+
+/* Remove o outline/box-shadow quando o botão é clicado/focado */
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: 0;
+    box-shadow: none !important;
+}
+
+/*Para remover borda do botão*/
+.navbar-toggler {
+    border: none;
+    color: #ffffff;
+}
+
+/*estlização do texto dentro da caixa de busca*/
+#texto-busca {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: none;
+    outline: none; /* remove a borda ao clicar */
+    width: 100%;
+}
+
+/*estilização do texto EM FOCO (ativo)*/
+#texto-busca:focus {
+    outline: none; /*remove linha ao redor do elemento*/
+}
+
+#texto-busca::placeholder {
+    color: rgba(255, 255, 255, 0.774);
+}
+
+/*estlização caixa de busca*/
+.caixa-busca {
+    background-color: #A0E166;
+    border-radius: 62px; /*arredonda bordas */
+    padding: 4px 40px 0px 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+/*Estilo da caixa de busca quando o input estiver ativo*/
+.caixa-busca:focus-within {
+    outline: 2px solid #ffffff;
+}
