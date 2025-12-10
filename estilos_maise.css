@@ -1,7 +1,7 @@
 /* todo MARGENS DO CONTAINER */
 .container-categoria {
-    padding-left: 100px;
-    padding-right: 100px; 
+    padding-left: 20px;
+    padding-right: 20px; 
     
 }
 
@@ -10,8 +10,8 @@ html, body {
     width: 100%;
     border: 0;
     margin: 0%;
+    font-family: "Abhaya Libre", serif;
 } 
-
 
 h1 { /* todo TITULO PRINCIPAL "CATEGORIAS" */
     font-family: "Abhaya Libre", serif;
@@ -20,6 +20,7 @@ h1 { /* todo TITULO PRINCIPAL "CATEGORIAS" */
     font-size: 48px; /* ajustavel */
     text-align: center; /* centraliza */
     margin-top: 20px; /* opcional, só pra dar espaço */
+
 }
 
 .categoria-item { /* todo CLASSE P/ AS CATEGORIAS */
@@ -33,6 +34,7 @@ h1 { /* todo TITULO PRINCIPAL "CATEGORIAS" */
     margin-bottom: 20px; /* espaço abaixo */
 }
 
+
 .categoria-fotos { /* todo CATEGORIA P/ AS FOTOS */
     display: flex;
     gap: 20px;
@@ -41,9 +43,10 @@ h1 { /* todo TITULO PRINCIPAL "CATEGORIAS" */
 }
 
 /* todo MOLDURA */
+
 .foto-box {
     width: 295px;               /* tamanho do quadrado */
-    height: 298px;
+    height: 295px;
     border-radius: 20px;        /* bordas arredondadas */
     overflow: hidden;           /* impede a imagem de vazar */
     display: flex;
@@ -56,16 +59,34 @@ h1 { /* todo TITULO PRINCIPAL "CATEGORIAS" */
 .foto-box img {
     width: 100%;
     height: 100%;
-    object-fit: cover;   /* garante que a imagem preencha sem distorcer */
+    object-fit: contain;   /* mostra imagem inteira */
 }
 
+.mais-categorias {
+    display: inline-block;       
+    font-size: 1.5rem;
+    padding: 5px 15px;           
+    background-color: #A0E166;
+    border-radius: 30px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
 
-
-p { /* todo CAMINHO "inicio -> categorias" */
+p.breadcrumb-text.mb-3 { /* todo CAMINHO "inicio -> categorias" */
     font-family: "Abhaya Libre", serif;
-    font-weight: 400; /*regular*/
+    font-weight: 400; /* regular */
     color: rgba(0, 0, 0, 0.6);
-
-
+    text-align: left; /* alinha o texto à esquerda */
 }
+
+
+/*              CATALOGO            */
+
+.catalogo {
+    padding-left: 100px;
+    padding-right: 100px; 
+    
+}
+
 
