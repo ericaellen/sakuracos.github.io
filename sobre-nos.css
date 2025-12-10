@@ -1,0 +1,158 @@
+body {
+
+    margin: 0;
+    font-family: Abhaya Libre;
+    background-color: #ffc4d1;
+    margin-top: 0;
+    padding-top: 20px;
+}
+/* FAIXA VERDE DO TOPO - CANTO A CANTO */
+#oferta-header {
+    background-color: #9bdc65; /* verde */
+    width: 100vw; /* ocupa toda a largura da tela */
+    margin: 0;   /* sem margem */
+    padding: 0;  /* sem padding */
+}
+
+#oferta-header .container-md {
+    padding: 8px 0;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+/*Menu*/
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    padding: 0px 20px;
+}
+
+/* FUNDO BRANCO */
+.container-branco {
+    background: #ffffff;     /* fundo branco */
+    padding: 50px 0;         /* espaço acima e abaixo */
+    display: flex;
+    justify-content: center; /* centraliza o quadro rosa */
+}
+
+/* QUADRO ROSA CENTRAL */
+.caixa-texto {
+    background: #ffc4d1;     /* rosa */
+    width: 1200%;              /* tamanho do quadro */
+    max-width: 1300px;       /* limite máximo */
+    padding: 100px;           /* espaço interno: texto fica DENTRO */
+    border-radius: 12px;     /* bordas arredondadas */
+    border: 2px solid #e5e5e5;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    font-size: 30px;
+}
+
+/* TÍTULO */
+.caixa-texto h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+
+.menu .logo {
+    color:#ffc4d1;
+    margin: 0;
+}
+
+
+.menu ul {
+list-style: none;
+display: flex;
+gap: 20px;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+}
+.menu input {
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+/*Seção sobre */
+.sobre {
+    width: 100%;               /* ocupa a tela toda */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffc4d1;       /* rosa */
+    padding: 60px 0;           /* mais altura */
+     padding-top: 20px;
+    padding-bottom: 200px;
+    margin-top: 0;
+}
+
+
+.sobre .texto {
+    width: 50%;
+    color: white;
+}
+.sobre .infos {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+.sobre .imagem img {
+    width: 350px;
+    border-radius: 10px;
+}
+/*História */
+.historia {
+    background: #ffe0ed;
+    margin: 30px;
+    padding: 90px;
+    border-radius: 12px;
+}
+.história h2 {
+    text-align: center;
+    color: #ffc4d1;
+}
+.logotipo {
+    width: 60px;   /* tamanho da logo */
+    height: auto;   /* mantém a proporção */
+}
+.search-btn {
+    background: none;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    color: #333;
+}
+
+.search-btn i {
+    font-size: 40px;
+}
+/* REMOVE QUALQUER ESPAÇO ACIMA DO MENU */
+.navbar {
+    margin: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* Remove espaço invisível da container que envolve o menu */
+.container-fluid.menu {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+header {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
