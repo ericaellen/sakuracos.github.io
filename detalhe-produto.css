@@ -1,0 +1,151 @@
+body {
+    background: #ffffff;
+    font-family: Abhaya Libre;
+    margin: 0;
+    padding: 0;
+}
+
+/* CONTAINER GERAL — AGORA OCUPA A TELA TODA */
+.produto-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 50px;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* GALERIA LATERAL */
+.galeria-lateral {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.galeria-lateral img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 20px;
+    background: #f5f5f5;
+    padding: 6px;
+}
+
+/* IMAGEM PRINCIPAL */
+.imagem-principal img {
+    width: 520px;     /* 🔥 AUMENTADO PARA FICAR IGUAL AO MODELO */
+    height: 600px;
+    border-radius: 25px;
+}
+
+/* COLUNA DAS INFORMAÇÕES */
+.info-produto {
+    max-width: 480px;
+}
+
+/* TÍTULO */
+.titulo-produto {
+    white-space: normal;
+    color: #f3a7c7
+    overflow: visible;
+    font-size: 32px;
+    width: 200%;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+/* AVALIAÇÃO */
+.avaliacao {
+    margin: 10px 0 15px;
+    color: gold;
+    font-size: 20px;
+}
+
+/* PREÇOS */
+.preco {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 15px 0;
+}
+
+.preco-atual {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.preco-antigo {
+    font-size: 16px;
+    color: gray;
+    text-decoration: line-through;
+}
+
+.desconto {
+    background: #ffd2d2;
+    padding: 6px 12px;
+    border-radius: 15px;
+    color: red;
+    font-weight: bold;
+}
+
+/* DESCRIÇÃO */
+.descricao {
+    margin: 20px 0;
+    color: #444;
+    font-size: 17px;
+}
+
+/* TAMANHOS */
+.tamanhos {
+    display: flex;
+    gap: 15px;
+}
+
+.tamanho {
+    padding: 12px 25px;
+    border-radius: 30px;
+    background: #e9e7e7;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.tamanho.ativo {
+    background: #9bdc65;
+    color: white;
+}
+
+/* QUANTIDADE */
+.quantidade {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 25px 0;
+    font-size: 22px;
+}
+
+.quantidade button {
+    background: #dbd8d8;
+    padding: 10px 22px;
+    width: 40%;
+    gap: 35px;
+    border-radius: 25px;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* BOTÃO */
+.btn-carrinho {
+    width: 100%;
+    padding: 18px;
+    background: #9bdc65;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+}
