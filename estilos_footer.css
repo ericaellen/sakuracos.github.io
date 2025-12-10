@@ -1,0 +1,75 @@
+/*FOOTER FEITO POR IA - CHATGPT - no footer abaixo inclua css e html com bootstrap 5 
+para incluir essa parte verde EXATAMENTE como no print. Coloque comentarios nas linhas 
+importantes sobre o que cada uma delas está fazendo E corrija o fato de que a pagina 
+está completamente branca em meu navegador, sem aparecer nada. */
+/* ====================== FUNDO ROSA DO FOOTER ====================== */
+.fundo {
+    background-color: #FFC4D1; /* Rosa padrão do print */
+}
+
+/* Deixa TODOS os textos do footer brancos */
+.footer, 
+.footer * {
+    color: #fff !important;
+    font-family: 'Abhaya Libre', serif !important;
+}
+
+/* Ajuste de títulos */
+.footer h5 {
+    font-weight: 800 !important;
+}
+
+/* Parágrafos e listas em bold */
+.footer p,
+.footer li {
+    font-weight: 700 !important;
+}
+
+/* Links brancos sem sublinhado */
+.footer a {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+/* Aumenta título "Sakura Cos" */
+.footer .col.mb-3:first-child h5 {
+    font-size: 28px;
+}
+
+
+
+/* ====================== ÁREA VERDE DO TOPO ====================== */
+.newsletter-section {
+    background-color: #A4E786; /* VERDE EXATO DO PRINT */
+    border-radius: 20px;       /* Arredondado igual ao print */
+    margin-top: 40px;
+}
+
+/* Título central da área verde */
+.titulo-newsletter {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+/* Agrupa campo + botão */
+.input-area {
+    width: 60%;
+    max-width: 650px;
+    background: white;
+    border-radius: 40px;
+    overflow: hidden; /* mantém formato arredondado */
+}
+
+/* Botão */
+.botao-newsletter {
+    background-color: white;
+    font-weight: 700;
+    border-left: 1px solid #ddd;
+}
+
+.fonte-secao-verde {
+    font-family: "Abhaya Libre", serif;
+}
+.titulo-secao-verde {
+    color: white;
+}
