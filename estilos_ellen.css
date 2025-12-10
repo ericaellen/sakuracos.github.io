@@ -1,125 +1,386 @@
-/*ELEMENTOS DO BODY NO GERAL*/
-/*Para o conteúdo ocupar toda largura da tela*/
-/* html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%
-} */
+/*ESTILOS REFERENTES AS PAGINAS CARRINHO E LAND PAGE*/
+/*feito por Érica Ellen */
 
 /*Fonte da página */
 body {
     font-family: "Abhaya Libre", serif;
 }
 
-/*formatação dos linkáveis no header*/
-header .nav-link {
-    color: #FFFF; 
-}
-
-/*formatação dos linkáveis no header, quando passa o mouse*/
-header .nav-link:hover {
-    color: rgba(255, 255, 255, 0.732); 
-}
-
-/*ESTILIZAÇÃO DE ELEMENTOS PRINCIPAIS - HEADER*/
-/*header com oferta e menu */
-header {
-    font-size: 24px; /*tamanho da fonte */
-    color: #FFFF;
-    text-decoration: none; /*remove sublinhado dos linkáveis*/
+/*prompt 1 ChatGPT - juntei o header com essa section e quando inspeciono e
+coloco no formato de um celular, ele fica ums borda branca que nao
+ficava antes, eu preciso q fique responsivo com o conteudo centralizado
+e sem essa coisa branca ai
+TRECHO POR IA:*/
+.dstq-principal {
     background-color: #FFC4D1;
-}
-
-/*Força o input a herdar a mesma
-tipografia do header
-pois input vem com formatacao padrao do navegador*/
-header input {
-  font-family: inherit;
-}
-
-/*id para o fundo verde ocupar toda largura e configs basicas*/
-#oferta-header {
-    background-color: #A0E166;
-    font-size: 20px;
+    color: #ffffff;
+    padding: 16px 20px 0px; /*valor pequeno para celular*/
     width: 100%; 
 }
 
-/*estilização do menu*/
-/*.menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-} */
-
-/*estlização dos navegaveis do menu - NAO PRECISEI USAR MAIS, DEVIDO
-AO BOOTSTRAP*/
-/*.menu nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-} */
-
-/*proporções do logotipo*/
-.logotipo {
-    height: 65px; /*altura logo*/
-    width: auto;
-    padding: 8px 16px;
-}
-
-/*ESTILIZAÇÃO DE SIMBOLOS & TEXTOS DO HEADER*/
-/*tamanho símbolos do google no header*/
-header .material-symbols-outlined {
-    font-size: 21px;
-}
-
-/*alinhamento de texto + símbolos do google no geral no header*/
-header .textos-simbolos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
+/* Para telas médias pra cima (>= 768px) */
+@media (min-width: 768px) {
+    .dstq-principal {
+        padding: 16px 80px 0px; /* tablet */
+    }
 } 
 
-/*estilização de botoes dentro do header */
-header button {
-    padding: 0px 0px 0px 0px;
-    color: #FFFF;
-    background-color: transparent;
-    border: none;
+/* Para telas grandes (>= 992px) */
+@media (min-width: 992px) {
+    .dstq-principal {
+        padding: 16px 100px 0px; /* desktop */
+    }
+}
+/*FIM TRECHO POR IA*/
+
+/*Para o conteúdo ocupar toda largura da tela*/
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%
 }
 
-/*estlização do texto dentro da caixa de busca*/
-#texto-busca {
+/*LAND PAGE*/
+/*DESTAQUE PRINCIPAL - ESTILOS*/
+
+/*Fundo rosa*/
+.hero-principal {
+    background-color: #f7b9c8;
+    color: white;
+}
+
+/*Título*/
+.dstq-titulo {
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+/*Titulo diminui em telas menores*/
+/*para celular, diminui tamanho da fonte*/
+@media (max-width: 768px) {
+    .dstq-titulo {
+        font-size: 45px;
+        font-weight: bold;
+        line-height: 1.1;
+    }
+} 
+
+/*Frase de destaque*/
+.dstq-frase {
+    font-size: 24px;
+}
+
+/*Textos pequenos*/
+.dstq-texto {
     font-size: 20px;
-    color: rgb(255, 255, 255);
-    background-color: transparent;
-    border: none;
-    outline: none; /* remove a borda ao clicar */
+    text-align: center;
+}
+
+/*Quantias*/
+.dstq-quantias {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*Linhas verticais*/
+.dstq-principal .vr {
+    width: 2px;
+    padding: 0;
+}
+
+/*Destaque verde */
+.dstq-verde {
+    background-color: #A0E166;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
     width: 100%;
 }
 
-/*estilização do texto EM FOCO (ativo)*/
-#texto-busca:focus {
-    outline: none; /*remove linha ao redor do elemento*/
-}
-
-#texto-busca::placeholder {
-    color: rgba(255, 255, 255, 0.774);
-}
-
-/*estlização caixa de busca*/
-.caixa-busca {
+/* Botão */
+.botao-verde {
     background-color: #A0E166;
-    border-radius: 62px; /*arredonda bordas */
-    padding: 4px 40px 0px 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 8px;
+    border: none;
+    font-weight: bold;
 }
 
-/*Estilo da caixa de busca quando o input estiver ativo*/
-.caixa-busca:focus-within {
-    outline: 2px solid #ffffff;
+/*quando passa o mouse pelo botao*/
+.botao-verde:hover {
+    background-color: #8ec95b;
+}
+
+/*Imagem destaque*/
+#dstq-img {
+    max-height: 580px;   /*Maximo de altura da imagem*/
+    width: auto;
+    object-fit: contain;
+}
+
+/*SECTION LANÇAMENTOS E MAIS VENDIDOS - ESTILOS*/
+/*TITULO*/
+.titulo-section {
+    color: #FFC4D1;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+/*para celular, diminui tamanho da fonte*/
+@media (max-width: 768px) {
+    .titulo-section {
+        color: #FFC4D1;
+        font-size: 38px;
+        font-weight: 800;
+    }
+} 
+
+/*REFERENTE AOS CARDS*/
+/*estilo de cada card*/
+.estilo-card {
+    border: none; /*tira a borda*/
+    box-shadow: none; /*remove sombras do bootstrap*/
+    padding: 0; /*pra poder centralizar a imagem*/
+    width: 85%;
+    font-size: 24px; /*tamanho da fonte pro titulo*/
+}
+
+/*linkaveis que estao dentro de cards*/
+.card-body a {
+    text-decoration: none;
+    color: black;
+}
+
+/*foto em miniatura dentro dos cards*/
+.miniatura-foto {
+    background-color: #F0EEED;
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    border-radius: 16px;
+}
+
+/*estilo cada estrela*/
+.estrela-avaliacao {
+    width: 18px;
+}
+
+/*conjunto de estrelas juntas*/
+.conjunto-estrelas {
+    gap: 4px;
+    padding: 0;
+}
+
+/*texto + estrelas*/
+.avaliacoes {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+/*valores no card*/
+.preco-card {
+    display: flex;
+    width: auto;
+    font-size: 20px;
+    gap: 0px;
+}
+.valor-principal {
+    color: black;
+}
+
+.valor-sem-desconto {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration-color: rgba(0, 0, 0, 0.6); /*cor da linha taxada*/
+    text-decoration: line-through; /*passa uma linha no meio da palavra*/
+}
+
+.porcentagem-desconto {
+    color: #FF3333;
+    background-color: #ff333310;
+    padding: 2px;
+    border-radius: 62px;
+}
+
+/*Estilização setas verdes*/
+.seta {
+    color: #A0E166;
+}
+
+/*Categoria - titulo*/
+.categoria-titulo {
+  font-weight: 800;
+  color: #ffffff;             
+  font-size: 48px;
+}
+
+/*SECTION CATEGORIAS - ESTILOS*/
+/*CODIGO FEITO POR IA CHATGPT - NAO CONSEGUI ADEQUAR A IMAGEM NA FORMATAÇÃO
+Preciso q resolva a questao do quadro de categorias com urgencia, o 
+primeiro print é como deve ficar, porem cada quadro esta mt longe um
+do outro no meu site, alem do primeiro ter ficado com a imagem normal
+e o segundo com a imagem esprimida (mt fina)*/
+
+/* ---------- Categorias: Card grid limpinho ---------- */
+.categorias {
+  /* se você tem container rosa de fundo, mantenha; aqui só espaçamento */
+  padding: 45px;
+  background-color: #FFC4D1;
+  width: 80%;
+  border-radius: 40px;
+}
+
+/* card link que envolve cada quadro */
+.category-card {
+  background: #ffffff;           /* fundo branco interno */
+  border-radius: 12px;
+  padding: 18px;
+  display: flex;
+  gap: 0px;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  box-shadow: none;
+  height: 170px;                 /* altura consistente — ajuste se quiser */
+  overflow: hidden;
+  width: auto;
+  /*quando a propriedade transform do elemento mudar 
+  (por exemplo, em um efeito de :hover), animar essa mudança ao
+  longo de 0,12 segundos com um movimento suave. */
+  transition: transform .12s ease;
+} 
+
+/* hover suave (opcional) */
+/*move ligeiramente para cima um elemento
+da página web quando o cursor do mouse passa sobre ele*/
+.category-card:hover { transform: translateY(-4px); } 
+
+/* título posicionado no canto superior esquerdo interno */
+.category-content {
+  position: relative;
+  flex: 1 1 55%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-right: 0px;
+}
+
+.category-title {
+  margin: 0;
+  color: #FFC4D1;             
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  padding-top: 6px;
+}
+
+/* bloco da imagem */
+.category-media {
+  flex: 0 0 45%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:100%;
+}
+
+/* evita imagens esticadas: ajusta para caber mantendo proporção */
+.capa-categoria {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain; /*contem imagem presa dentro do bloco*/
+  display:block;
+} 
+
+/* Garante espaçamento uniforme entre colunas (gutter) — já aplicado via row.g-3 */
+/* Ajustes responsivos */
+@media (max-width: 991.98px) {
+  .category-card { 
+    height: 160px; padding:14px; 
+}
+  .category-title { 
+    font-size: 28px; 
+}
+}
+@media (max-width: 575.98px) {
+  .category-card {
+    flex-direction: row; /* mantém imagem à direita */
+    height: 140px;
+    gap: 10px;
+  }
+  .category-title { font-size:24px; }
+  .category-media { flex:0 0 45%; }
+}
+/* FIM TRECHO IA */
+
+/*PAGINA DE CARRINHO*/
+/*FORMATAÇÃO CAMINHO INICIO > CARRINHO*/
+.caminho span {
+    font-size: 20px;
+}
+.caminho .material-symbols-outlined {
+    font-size: 18px;
+    padding: 0px;
+    margin: 0;
+}
+
+.foto-carrinho {
+    background-color: #F0EEED;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+/*estilos cards do carrinho*/
+/*bordas*/
+.card-carrinho {
+    border: none;
+}
+
+.borda-itens-carrinho {
+    border: 2px solid #FFC4D1 !important;
+}
+
+.card-valores-carrinho {
+    border: 2px solid #FFC4D1 !important;
+    border-radius: 16px;
+}
+
+/*borda das linhas HR*/
+.conteudo-carrinho hr {
+    border: none;
+    border-top: 2px solid #FFC4D1 !important;
+    opacity: 1 !important;
+}
+
+.valor-total-item {
+    font-size: 26px !important;
+}
+
+/*botao controla quantidade*/
+.quantia-item-card {
+    background-color: #F0EEED;
+    font-size: 18px;
+    display: flex;
+    margin: 0px;
+    border-radius: 16px;
+    padding: 0px;
+    gap: 4px;
+}
+
+/*descrição dos textos pros valores*/
+.descricao-valores {
+    font-size: 20px;
+}
+
+.valor-desconto {
+    color: #FF3333;
+}
+
+.valor-total-carrinho {
+    font-weight: 800;
+    font-size: 28px;
+}
+
+.botao-verde .material-symbols-outlined {
+    font-size: 18px;
 }
