@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias</title>
+
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- Estilos gerais -->
+    <link rel="stylesheet" href="estilos_maise.css">
+    <link rel="stylesheet" href="estilos_header.css">
+
+    <!-- estilos do footer-->
+    <link rel="stylesheet" href="estilos_footer.css">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- Oferta acima do menu -->
+        <div id="oferta-header">
+            <div class="container-md text-center">
+                <p class="m-0 py-0">
+                    Obtenha 20% de desconto na semana do consumidor com produtos selecionados. Aproveite!
+                </p>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <div class="container-fluid menu d-flex justify-content-center align-items-center">
+            <nav class="navbar navbar-expand-lg navbar-dark d-flex justify-content-center py-3">  
+                <img src="ImagensM/logo-cortada.png" alt="logotipo da loja" class="navbar-brand logotipo">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categorias
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="categorias.html#masculino">Masculino</a></li>
+                                <li><a class="dropdown-item" href="categorias.html#feminino">Feminino</a></li>
+                                <li><a class="dropdown-item" href="categorias.html#infantil">Infantil</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item"><a href="catalogo.html" class="nav-link">Catálogo</a></li>
+                        <li class="nav-item"><a href="sobre-nos.html" class="nav-link">Sobre nós</a></li>
+
+                        <li>
+                            <div class="caixa-busca textos-simbolos">
+                                <button><span class="material-symbols-outlined">search</span></button>
+                                <input type="text" id="texto-busca" placeholder="Pesquise por produtos">
+                            </div>
+                        </li>
+
+                        <li class="nav-item"><a href="carrinho.html" class="nav-link"><span class="material-symbols-outlined">shopping_cart</span></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link"><span class="material-symbols-outlined">account_circle</span></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO -->
+    <main class="container mt-5 container-categoria text-center">
+        <div class="col-12 d-flex justify-content-center">
+            <hr class="opacity-25 w-100">
+        </div>
+
+        <h1 class="text-center">CATEGORIAS</h1>
+        <p class="breadcrumb-text mb-3">Início <i class="bi bi-chevron-compact-right"></i> Categorias</p>
+
+        <!-- FEMININO -->
+        <p class="categoria-item" id="feminino">Feminino <i class="bi bi-arrow-down"></i></p>
+        <div class="row categoria-fotos text-center">
+            <div class="col-12 col-sm-6 col-md-3 mb-3"><div class="foto-box"><img src="imagens/feminino1.jpg" alt="Foto Feminino"></div></div>
+            <div class="col-12 col-sm-6 col-md-3 mb-3"><div class="foto-box"><img src="imagens/feminino2.jpg" alt="Foto Feminino"></div></div>
+            <div class="col-12 col-sm-6 col-md-3 mb-3"><div class="foto-box"><img src="imagens/feminino3.jpg" alt="Foto Feminino"></div></div>
+            <div class="col-12 col-sm-6 col-md-3 mb-3"><div class="foto-box"><img src="imagens/feminino4.jpg" alt="Foto Feminino"></div></div>
+        </div>
+
+        <!-- MASCULINO -->
+        <p class="categoria-item" id="masculino">Masculino <i class="bi bi-arrow-down"></i></p>
+        <div class="row categoria-fotos text-center">
+            <div class="col-12 col-sm-6 col-md-3 mb-3"><div class="foto-box"><img src="imagens/masculino1.jpg" alt="Foto Masculino"></div></div>
+            <div class="col-12 col-sm-6 col-md-3 mb-3"><div class="foto-box"><img src="imagens/masculino2.jpg" alt="Foto Masculino"></div></div>
+            <div class="col-12 col-sm-6 col-md-3 mb-3"><div class="foto-box"><img src="imagens/masculino3.jpg" alt="Foto Masculino"></div></div>
+            <div class="col-12 col-sm-6 col-md-3 mb-3"><div class="foto-box"><img src="imagens/masculino4.jpg" alt="Foto Masculino"></div></div>
+        </div>
+
+        <!-- INFANTIL -->
+        <p class="categoria-item" id="infantil">Infantil <i class="bi bi-arrow-down"></i></p>
+        <div class="row categoria-fotos text-center">
+            <div class="col-12 col-sm-6 col-md-3 mb-3"><div class="foto-box"><img src="imagens/infantil1.jpg" alt="Foto Infantil"></div></div>
+            <div class="col-12 col-sm-6 col-md-3 mb-3"><div class="foto-box"><img src="imagens/infantil2.jpg" alt="Foto Infantil"></div></div>
+            <div class="col-12 col-sm-6 col-md-3 mb-3"><div class="foto-box"><img src="imagens/infantil3.jpg" alt="Foto Infantil"></div></div>
+            <div class="col-12 col-sm-6 col-md-3 mb-3"><div class="foto-box"><img src="imagens/infantil4.jpg" alt="Foto Infantil"></div></div>
+        </div>
+
+        <!-- Botão Mais Categorias -->
+        <div class="col-12 text-center mt-3">
+            <p class="mais-categorias">Mais Categorias <i class="bi bi-arrow-down"></i></p>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+
+    <section class="newsletter-section fonte-secao-verde py-4">
+        <div class="container text-center">
+
+            <!-- Título -->
+            <h2 class="fw-bold titulo-secao-verde titulo-newsletter">
+                Esteja atualizado sobre nossas últimas ofertas!
+            </h2>
+
+            <!-- Área do formulário -->
+            <div class="d-flex justify-content-center mt-3">
+                <div class="input-group input-area">
+
+                    <!-- Ícone do envelope -->
+                    <span class="input-group-text bg-white border-0">
+                        <i class="bi bi-envelope"></i>
+                    </span>
+
+                    <!-- Campo de e-mail -->
+                    <input type="email" class="form-control border-0" placeholder="Digite seu endereço de e-mail">
+
+                    <!-- Botão -->
+                    <button class="btn btn-white border-0 px-4 botao-newsletter">
+                        Inscreva-se para receber!
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ============================================================================== -->
+
+
+
+
+    <!-- ========================== FOOTER ROSA =============================== -->
+    <footer class="fundo footer py-5 mt-0 border-top">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5">
+
+                <!-- Coluna 1 -->
+                <div class="col mb-3">
+                    <h5>Sakura Cos</h5>
+                    <p>Temos cosplays que combinam com o seu estilo e que você terá orgulho de vestir.</p>
+                    <p>De personagens femininos a masculinos, tudo para você entrar no mundo do cosplay.</p>
+
+                    <!-- Ícones -->
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-facebook ms-2"></i>
+                    <i class="bi bi-instagram ms-2"></i>
+                </div>
+
+                <!-- Coluna 2 -->
+                <div class="col mb-3">
+                    <h5>EMPRESA</h5>
+                    <ul class="nav flex-column">
+                        <li><a href="#" class="nav-link p-0">Sobre</a></li>
+                        <li><a href="#" class="nav-link p-0">Recursos</a></li>
+                        <li><a href="#" class="nav-link p-0">Trabalhos</a></li>
+                        <li><a href="#" class="nav-link p-0">Carreira</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3 -->
+                <div class="col mb-3">
+                    <h5>AJUDA</h5>
+                    <ul class="nav flex-column">
+                        <li><a href="#" class="nav-link p-0">SAC</a></li>
+                        <li><a href="#" class="nav-link p-0">Detalhes de Entrega</a></li>
+                        <li><a href="#" class="nav-link p-0">Termos & Condições</a></li>
+                        <li><a href="#" class="nav-link p-0">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 4 -->
+                <div class="col mb-3">
+                    <h5>DÚVIDAS</h5>
+                    <ul class="nav flex-column">
+                        <li><a href="#" class="nav-link p-0">Conta</a></li>
+                        <li><a href="#" class="nav-link p-0">Gerenciar Entrega</a></li>
+                        <li><a href="#" class="nav-link p-0">Pedidos</a></li>
+                        <li><a href="#" class="nav-link p-0">Pagamentos</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 5 -->
+                <div class="col mb-3">
+                    <h5>RECURSOS</h5>
+                    <ul class="nav flex-column">
+                        <li><a href="#" class="nav-link p-0">Blog de Dicas</a></li>
+                        <li><a href="#" class="nav-link p-0">Playlists do YouTube</a></li>
+                    </ul>
+                </div>
+
+                <!-- Linha final -->
+                <p class="text-center mt-4 w-100">
+                    © 2025 Sakura Cos. Todos os direitos reservados.
+                </p>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Javascript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
